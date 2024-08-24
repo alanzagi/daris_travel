@@ -119,10 +119,10 @@
           <img src="img/kemah.jpg" alt="Orang sedang berkemah" class="absolute inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
         <div class="font-cabin">
-          <h1 class="text-2xl font-playfair font-semibold tracking-tight text-gray-900 capitalize lg:text-4xl">Destinasi Sederhana untuk bersantai</h1>
+          <h1 class="text-2xl font-playfair font-semibold tracking-tight text-gray-900 capitalize lg:text-4xl">Destinasi Menakjubkan untuk bersantai</h1>
           <p class="mt-4 text-gray-700">
-            Destinasi sederhana untuk bersantai, di mana alam menawarkan ketenangan. Sebuah tempat dengan pemandangan yang memanjakan mata, angin lembut yang menyapa, serta suara alam yang menenangkan jiwa. Sempurna untuk melepas lelah dan
-            menikmati keindahan hidup.
+            Destinasi menakjubkan untuk bersantai, di mana alam menawarkan ketenangan. Sebuah tempat dengan pemandangan yang memanjakan mata, angin lembut yang menyapa, serta suara alam yang menenangkan jiwa. Sempurna untuk melepas lelah
+            dan menikmati keindahan hidup.
           </p>
           <div class="mt-4 flex items-center justify-start">
             <a href="kontak.html" class="flex items-center rounded-md px-4 py-2.5 text-md font-semibold shadow-sm ring ring-cyan-500 hover:bg-cyan-500 transition duration-200">Pesan Sekarang</a>
@@ -141,19 +141,20 @@
         <!-- Grid Foto -->
         <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-3 mx-auto">
           <!-- Grid Foto I -->
-          <div class="relative w-full h-64 lg:h-80">
-            <img src="img/lemukutan1.jpg" alt="Orang sedang berkemah" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+          <button class="relative w-full h-64 lg:h-80" data-modal-target="satu-modal" data-modal-toggle="satu-modal">
+            <img src="img/lemukutan1.jpg" alt="Pulau Lemukutan" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
             <!-- Overlay hitam menggunakan pseudo-element -->
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
             <!-- Teks di kiri bawah pojok -->
-            <div class="absolute bottom-0 left-0 p-4 text-white">
+            <div class="absolute bottom-0 left-0 p-4 text-white flex flex-col items-start">
               <h3 class="text-lg font-semibold">Pulau Lemukutan</h3>
-              <p class="text-sm">Rp439.000/orang</p>
+              <p class="text-sm">Rp450.000/orang</p>
             </div>
-          </div>
+          </button>
+
           <!-- Modal Grid Foto I -->
           <div
-            id="static-modal"
+            id="satu-modal"
             data-modal-backdrop="static"
             tabindex="-1"
             aria-hidden="true"
@@ -164,8 +165,8 @@
               <div class="relative bg-white rounded-lg shadow">
                 <!-- Modal header -->
                 <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                  <h3 class="text-xl font-semibold text-gray-900">Static modal</h3>
-                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="static-modal">
+                  <h3 class="text-xl font-semibold text-gray-900">Paket Wisata Pulau Lemukutan</h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="satu-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                     </svg>
@@ -173,51 +174,239 @@
                   </button>
                 </div>
                 <!-- Modal body -->
-                <div class="p-4 md:p-5 space-y-4">
-                  <p class="text-base leading-relaxed text-gray-500">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                  </p>
-                  <p class="text-base leading-relaxed text-gray-500">
-                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as
-                    possible of high-risk data breaches that could personally affect them.
+                <div class="p-4 md:p-5">
+                  <div class="space-y-2">
+                    <h1 class="text-gray-900">Dengan Rp450.000/orang. Fasilitas yang didapatkan meliputi:</h1>
+                    <ul>
+                      Penginapan:
+                      <li>- Penginapan 3 Hari 2 Malam</li>
+                      <li>- Penyebrangan Kapal Pulang Pergi</li>
+                      <li>- 3 Tempat Tidur</li>
+                      <li>- AC & TV</li>
+                      <li>- Kamar Mandi Dalam</li>
+                      <li>- Pemandu Wisata</li>
+                      <li>- Free Wi-Fi 6 Jam</li>
+                      <li>- Free Perlengkapan Renang</li>
+                      <li>- Free Perlengkapan Snorkeling</li>
+                      <li>- Free Perlengkapan Karaoke</li>
+                    </ul>
+                    <ul>
+                      Konsumsi:
+                      <li>- Makan Pagi, Siang, dan Malam</li>
+                      <li>- Snack Ringan Sore</li>
+                      <li>- Barbeque Malam</li>
+                    </ul>
+                    <ul>
+                      Dokumentasi:
+                      <li>- Foto Dokumentasi Kegiatan (Canon M100)</li>
+                      <li>- Video Dokumentasi Kegiatan (Canon M100)</li>
+                      <li>- Cinematic Kegiatan + Edit Full Request (Canon M100)</li>
+                    </ul>
+                  </div>
+
+                  <p class="mt-2">Minimum Pemesanan 6 Orang.</p>
+                  <p>
+                    Konsultasi lebih lanjut silakan klik
+                    <a href="https://wa.me/6281521550913?text=halo" class="text-cyan-500">Hubungi Kami</a>
                   </p>
                 </div>
                 <!-- Modal footer -->
                 <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
-                  <button data-modal-hide="static-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                    I accept
-                  </button>
+                  <button type="button" class="hubungi text-white bg-cyan-500 hover:bg-cyan-600 focus:ring-4 focus:outline-none focus:ring-cyan-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Hubungi Kami</button>
                   <button
-                    data-modal-hide="static-modal"
+                    data-modal-hide="satu-modal"
                     type="button"
-                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-cyan-500 focus:z-10 focus:ring-4 focus:ring-gray-100"
                   >
-                    Decline
+                    Tutup
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="relative w-full h-64 lg:h-80">
+          <button class="relative w-full h-64 lg:h-80" data-modal-target="dua-modal" data-modal-toggle="dua-modal">
             <img src="img/temajuk2.jpg" alt="Orang sedang berkemah" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
             <!-- Overlay hitam menggunakan pseudo-element -->
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
             <!-- Teks di kiri bawah pojok -->
-            <div class="absolute bottom-0 left-0 p-4 text-white">
+            <div class="absolute bottom-0 left-0 p-4 text-white flex flex-col items-start">
               <h3 class="text-lg font-semibold">Desa Temajuk</h3>
-              <p class="text-sm">Rp849.000/orang</p>
+              <p class="text-sm">Rp350.000/orang</p>
+            </div>
+          </button>
+          <!-- Modal Grid Foto II -->
+          <div
+            id="dua-modal"
+            data-modal-backdrop="static"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                  <h3 class="text-xl font-semibold text-gray-900">Paket Wisata Desa Temajuk</h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="dua-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <div class="space-y-2">
+                    <h1 class="text-gray-900">Dengan Rp350.000/orang. Fasilitas yang didapatkan meliputi:</h1>
+                    <ul>
+                      Penginapan:
+                      <li>- 2 Hari 2 Malam</li>
+                      <li>- 3 Tempat Tidur</li>
+                      <li>- AC & TV</li>
+                      <li>- Kamar Mandi Dalam</li>
+                      <li>- Free Wi-Fi 12 Jam</li>
+                      <li>
+                        - Free Ticket Masuk ke
+                        <a href="https://maps.app.goo.gl/Z8FarWs8yhLZoeq6A" target="_blank" class="text-cyan-500"> Rumah Terbalik </a>
+                      </li>
+                      <li>- Pemandu Wisata</li>
+                    </ul>
+                    <ul>
+                      Konsumsi:
+                      <li>- Makan Pagi, Siang, dan Malam</li>
+                      <li>- Snack Ringan Sore</li>
+                    </ul>
+                    <ul>
+                      Spot Photo:
+                      <li>
+                        -
+                        <a href="https://maps.app.goo.gl/aWtEEvttJaak1ara6" target="_blank" class="text-cyan-500">Pantai Batu Nenek</a>
+                      </li>
+                      <li>
+                        -
+                        <a href="https://maps.app.goo.gl/LDorpgCfSMBmdN9cA" target="_blank" class="text-cyan-500">Pantai Teluk Atong</a>
+                      </li>
+                      <li>
+                        -
+                        <a href="https://maps.app.goo.gl/nPwAKzxJBgoHtkEy6" target="_blank" class="text-cyan-500">Pantai JLO</a>
+                      </li>
+                      <li>- Dan seterusnya.</li>
+                    </ul>
+                  </div>
+
+                  <p class="mt-2">Minimum Pemesanan 6 Orang.</p>
+                  <p>
+                    Konsultasi lebih lanjut silakan klik
+                    <a href="https://wa.me/6281521550913?text=halo" class="text-cyan-500">Hubungi Kami</a>
+                  </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                  <button type="button" class="hubungi text-white bg-cyan-500 hover:bg-cyan-600 focus:ring-4 focus:outline-none focus:ring-cyan-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Hubungi Kami</button>
+                  <button
+                    data-modal-hide="dua-modal"
+                    type="button"
+                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-cyan-500 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="relative w-full h-64 lg:h-80">
+          <!-- Grid Foto III -->
+          <button class="relative w-full h-64 lg:h-80" data-modal-target="tiga-modal" data-modal-toggle="tiga-modal">
             <img src="img/tugukhatulistiwa3.jpg" alt="Orang sedang berkemah" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
             <!-- Overlay hitam menggunakan pseudo-element -->
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
             <!-- Teks di kiri bawah pojok -->
-            <div class="absolute bottom-0 left-0 p-4 text-white">
+            <div class="absolute bottom-0 left-0 p-4 text-white flex flex-col items-start">
               <h3 class="text-lg font-semibold">Pontianak</h3>
-              <p class="text-sm">Rp599.000/orang</p>
+              <p class="text-sm">Rp650.000/orang</p>
+            </div>
+          </button>
+          <!-- Modal Grid Foto III -->
+          <div
+            id="tiga-modal"
+            data-modal-backdrop="static"
+            tabindex="-1"
+            aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                  <h3 class="text-xl font-semibold text-gray-900">Paket Wisata Kota Pontianak</h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="tiga-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <div class="space-y-2">
+                    <h1 class="text-gray-900">Dengan Rp650.000/orang. Fasilitas yang didapatkan meliputi:</h1>
+                    <ul>
+                      Penginapan:
+                      <li>- 2 Hari 2 Malam</li>
+                      <li>- 3 Tempat Tidur</li>
+                      <li>- AC & TV</li>
+                      <li>- Kamar Mandi Dalam</li>
+                      <li>- Free Wi-Fi 24 Jam</li>
+                      <li>- Pemandu Wisata</li>
+                    </ul>
+                    <ul>
+                      Konsumsi:
+                      <li>- Makan Pagi, Siang, dan Malam</li>
+                      <li>- Snack Ringan Sore</li>
+                    </ul>
+                    <ul>
+                      Spot Photo:
+                      <li>
+                        -
+                        <a href="https://g.co/kgs/uFFWxEf" target="_blank" class="text-cyan-500">Taman Alun-Alun Kapuas</a>
+                      </li>
+                      <li>
+                        -
+                        <a href="https://g.co/kgs/KaXxLW2" target="_blank" class="text-cyan-500">Taman Khatulistiwa</a>
+                      </li>
+                      <li>
+                        -
+                        <a href="https://g.co/kgs/MsWW7K9" target="_blank" class="text-cyan-500">Istana Kadariah</a>
+                      </li>
+                      <li>
+                        -
+                        <a href="https://g.co/kgs/mvSxx1i" target="_blank" class="text-cyan-500">Museum Kalimantan Barat</a>
+                      </li>
+                      <li>- Dan seterusnya.</li>
+                    </ul>
+                  </div>
+
+                  <p class="mt-2">Minimum Pemesanan 6 Orang.</p>
+                  <p>
+                    Konsultasi lebih lanjut silakan klik
+                    <a href="https://wa.me/6281521550913?text=halo" class="text-cyan-500">Hubungi Kami</a>
+                  </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                  <button type="button" class="hubungi text-white bg-cyan-500 hover:bg-cyan-600 focus:ring-4 focus:outline-none focus:ring-cyan-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Hubungi Kami</button>
+                  <button
+                    data-modal-hide="tiga-modal"
+                    type="button"
+                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-cyan-500 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                  >
+                    Tutu[]
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -239,6 +428,9 @@
       </div>
     </section>
     <!-- End Section III -->
+
+    <!-- Internal Javascript -->
+    <script src="js/script.js"></script>
     <!-- Flowbite Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
