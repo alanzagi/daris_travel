@@ -141,7 +141,7 @@
         <!-- Grid Foto -->
         <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3 mx-auto">
           <!-- Grid Foto I -->
-          <button class="relative w-full h-64 lg:h-80" data-modal-target="satu-modal" data-modal-toggle="satu-modal">
+          <button class="relative w-full h-64 lg:h-80 rounded-lg hover:ring-4 hover:ring-cyan-500" data-modal-target="satu-modal" data-modal-toggle="satu-modal">
             <img src="img/lemukutan1.jpg" alt="Pulau Lemukutan" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
             <!-- Overlay hitam menggunakan pseudo-element -->
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -225,7 +225,8 @@
             </div>
           </div>
 
-          <button class="relative w-full h-64 lg:h-80" data-modal-target="dua-modal" data-modal-toggle="dua-modal">
+          <!-- Grid Foto II -->
+          <button class="relative w-full h-64 lg:h-80 rounded-lg hover:ring-4 hover:ring-cyan-500" data-modal-target="dua-modal" data-modal-toggle="dua-modal">
             <img src="img/temajuk2.jpg" alt="Orang sedang berkemah" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
             <!-- Overlay hitam menggunakan pseudo-element -->
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -318,7 +319,7 @@
           </div>
 
           <!-- Grid Foto III -->
-          <button class="relative w-full h-64 lg:h-80" data-modal-target="tiga-modal" data-modal-toggle="tiga-modal">
+          <button class="relative w-full h-64 lg:h-80 rounded-lg hover:ring-4 hover:ring-cyan-500" data-modal-target="tiga-modal" data-modal-toggle="tiga-modal">
             <img src="img/tugukhatulistiwa3.jpg" alt="Orang sedang berkemah" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
             <!-- Overlay hitam menggunakan pseudo-element -->
             <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -437,20 +438,20 @@
           <p class="font-cabin text-md lg:pt-4 lg:text-lg lg:pr-8">Tempat indah, penuh petualangan, pemandangan memukau, pantai eksotis, dan budaya kaya. Sempurna untuk liburan.</p>
         </div>
 
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasijlo.jpg" alt="Pulau Lemukutan" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasijlo.jpg" alt="Pulau Lemukutan" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasikhatulistiwa.jpeg" alt="Pulau Lemukutan" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasikhatulistiwa.jpeg" alt="Pulau Lemukutan" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasimuseumkalimantabarat.png" alt="Pulau Lemukutan" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasimuseumkalimantabarat.png" alt="Pulau Lemukutan" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
         <div class="relative w-full h-64 lg:h-60 flex flex-col items-center justify-center lg:pt-20">
@@ -495,32 +496,96 @@
     <section class="bg-white">
       <div class="text-gray-900 text-center px-6 pt-10 pb-5 space-y-2">
         <h1 class="font-playfair text-3xl">Beragam Tempat Eksotis</h1>
-        <p class="font-cabin text-md">Jelajahi keindahan alam dan budaya unik di berbagai tempat eksotis yang menawarkan pengalaman tak terlupakan.</p>
+        <p class="font-cabin text-md lg:text-lg">Jelajahi keindahan alam dan budaya unik di berbagai tempat eksotis yang menawarkan pengalaman tak terlupakan.</p>
       </div>
-      <div class="px-4 grid grid-cols-1 gap-5 mx-auto md:grid-cols-3 md:auto-rows-fr lg:p-20">
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+      <div class="mb-10 px-4 grid grid-cols-1 gap-5 mx-auto md:grid-cols-3 md:auto-rows-fr lg:px-20 lg:pt-5">
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasipantaijlo.jpg" alt="Destinasi Batu Nenek" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasiistanakadariah.jpg" alt="Destinasi Batu Nenek" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-64 md:h-auto md:row-span-2">
-          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 md:h-auto md:row-span-2 overflow-hidden">
+          <img src="img/destinasialunalunkapuas.jpg" alt="Destinasi Batu Nenek" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-64 lg:h-80">
-          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasidesalemukutan.jpg" alt="Destinasi Batu Nenek" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
 
-        <div class="relative w-full h-[32rem] md:h-64 lg:h-80">
-          <img src="img/destinasibatunenek.jpg" alt="Destinasi Batu Nenek" class="relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
+        <div class="relative w-full h-[32rem] md:h-64 lg:h-80 overflow-hidden">
+          <img src="img/destinasipantaitemajuk.jpg" alt="Destinasi Batu Nenek" class="transform transition-transform duration-300 ease-in-out hover:scale-110 relative inset-0 object-cover w-full h-full rounded-lg bg-gray-100" />
         </div>
       </div>
     </section>
-
     <!-- End Section VI -->
+
+    <!-- Start Section VII -->
+    <div class="bg-slate-100">
+      <div class="text-center px-4 pt-10 pb-5 space-y-2">
+        <h1 class="font-playfair text-3xl">Rating Pelanggan</h1>
+        <p class="font-cabin text-md">Berikut adalah ulasan dari para pelanggan kami, memberikan pandangan nyata tentang kualitas layanan yang kami tawarkan.</p>
+      </div>
+      <div class="px-6">
+        <div class="grid grid-cols-1 gap-6 border border-gray-200 rounded-lg shadow-sm md:mb-12 md:grid-cols-2">
+          <figure class="items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
+            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+              <h3 class="text-lg font-semibold text-gray-900">Very easy this was to integrate</h3>
+              <p class="my-4">If you care for your time, I hands down would go with this."</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
+              <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
+                <div>Bonnie Green</div>
+                <div class="text-sm text-gray-500">Developer at Open AI</div>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg">
+            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+              <h3 class="text-lg font-semibold text-gray-900">Solid foundation for any project</h3>
+              <p class="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!"</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture" />
+              <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
+                <div>Roberta Casas</div>
+                <div class="text-sm text-gray-500">Lead designer at Dropbox</div>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e">
+            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+              <h3 class="text-lg font-semibold text-gray-900">Mindblowing workflow</h3>
+              <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture" />
+              <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
+                <div>Jese Leos</div>
+                <div class="text-sm text-gray-500">Software Engineer at Facebook</div>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg">
+            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
+              <h3 class="text-lg font-semibold text-gray-900">Efficient Collaborating</h3>
+              <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center">
+              <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture" />
+              <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
+                <div>Joseph McFall</div>
+                <div class="text-sm text-gray-500">CTO at Google</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- End Section VII -->
 
     <!-- Internal Javascript -->
     <script src="js/script.js"></script>
