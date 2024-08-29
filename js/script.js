@@ -50,3 +50,53 @@ document.querySelectorAll(".hubungi").forEach(function (button) {
   });
 });
 // End Fungsi untuk tombol hubungi
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbxS0tNgVZ7qU1-STyikAmDrstz-mHtXRqKqZIPteTeMVBelTATd4PPd8q4IBkuZ3Si9/exec";
+const form = document.forms["database"];
+const button = document.getElementById("submit");
+const successMessage = document.getElementById("success-message");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Mencegah form dari reload halaman default
+  handleSubmit(); // Panggil handleSubmit untuk mengubah status tombol dan mengirim data
+});
+
+function handleSubmit() {
+  // Ubah tombol menjadi status loading
+  button.innerHTML = `
+    <div class="flex items-center justify-center w-full">
+      <svg class="animate-spin h-5 w-5 border-white border-t-transparent border-2 rounded-full" viewBox="0 0 24 24"></svg>
+      <span class="ml-2 md:hidden">Loading...</span>
+    </div>`;
+  button.disabled = true;
+  button.classList.add("bg-cyan-400", "cursor-not-allowed");
+
+  // Kirim data ke Google Sheets
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      console.log("Success!", response);
+
+      // Kembalikan tombol ke status normal
+      button.innerHTML = "Kirim";
+      button.disabled = false;
+      button.classList.remove("bg-cyan-400", "cursor-not-allowed");
+      button.classList.add("bg-cyan-500", "hover:bg-cyan-600");
+
+      // Tampilkan pesan berhasil
+      successMessage.classList.remove("hidden");
+
+      // Sembunyikan pesan berhasil setelah 3 detik
+      setTimeout(() => {
+        successMessage.classList.add("hidden");
+      }, 3000); // 3 detik
+    })
+    .catch((error) => {
+      console.error("Error!", error.message);
+
+      // Kembalikan tombol ke status normal jika terjadi kesalahan
+      button.innerHTML = "Kirim";
+      button.disabled = false;
+      button.classList.remove("bg-cyan-400", "cursor-not-allowed");
+      button.classList.add("bg-cyan-500", "hover:bg-cyan-600");
+    });
+}
