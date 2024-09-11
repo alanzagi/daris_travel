@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daris Travel - Beranda</title>
+
+    <link rel="icon" href="img/alanxcode.png" type="image/x-icon" />
+    <!-- CDN TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CDN Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- Playfair Display Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <!-- Cabin Display Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+      .font-cabin {
+        font-family: "Cabin", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Nav -->
+    <nav class="absolute top-0 left-0 w-full bg-transparent z-50 font-playfair">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://instagram.com/alanzagi" class="flex items-center space-x-3 rtl:space-x-reverse" target="_blank">
+          <span class="self-center text-2xl font-medium whitespace-nowrap text-cyan-400">Daris Travel</span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-cyan-400 rounded-lg md:hidden hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center hidden w-full md:flex md:w-auto md:order-1 md:ml-auto" id="navbar-cta">
+          <ul class="flex flex-col text-xl font-medium p-4 md:p-0 mt-4 border border-gray-200 rounded-lg bg-slate-200 text-gray-900 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent md:text-white">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 md:p-2 rounded hover:text-white hover:bg-cyan-500 md:hover:bg-transparent md:hover:text-cyan-500 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent"
+                aria-current="page"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a href="tentang.html" class="block py-2 px-3 md:p-2 rounded hover:text-white hover:bg-cyan-500 md:hover:bg-transparent md:hover:text-cyan-500 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a href="layanan.html" class="block py-2 px-3 md:p-2 rounded hover:text-white hover:bg-cyan-500 md:hover:bg-transparent md:hover:text-cyan-500 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent"
+                >Layanan</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontak.html"
+                class="block py-2 px-3 md:p-2 text-white rounded bg-cyan-500 hover:text-white hover:bg-cyan-500 md:hover:bg-transparent md:hover:text-cyan-500 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent md:text-cyan-500"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Start Main -->
+    <main class="relative h-[60vh] bg-cover bg-center overflow-x-hidden bg-[url('img/khatulistiwabackground.jpg')] font-cabin md:h-[75vh]">
+      <!-- Overlay hitam dengan opacity -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <!-- Konten di atas background -->
+      <div class="relative z-10 flex items-center justify-center h-full md:pt-12">
+        <div class="text-center max-w-2xl w-full px-5 text-slate-100 md:pl-10 lg:pl-7">
+          <h1 class="text-3xl font-medium tracking-tight mb-2 lg:mb-5 lg:text-4xl">Kontak</h1>
+          <p class="text-md">Beranda >> <span class="text-cyan-500">Kontak</span></p>
+        </div>
+      </div>
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Section I -->
+    <section class="bg-white font-cabin">
+      <div class="w-full py-20">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3374801675477!2d108.98420807403576!3d0.8895406628844599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e3739a25f1bc61%3A0xf17e632b61b7a097!2sSMK%20Negeri%203%20Singkawang!5e0!3m2!1sid!2sid!4v1726063858187!5m2!1sid!2sid"
+          height="650"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full"
+        >
+          ></iframe
+        >
+
+        <div>
+          <div class="bg-slate-100">
+            <div class="py-10 px-4 space-y-4">
+              <h1 class="text-3xl font-playfair">Informasi Kontak</h1>
+              <p class="text-md">Hubungi kami untuk pemesanan hotel, informasi perjalanan, dan layanan wisata terbaik dengan respon cepat</p>
+            </div>
+            <div class="px-4 pb-6">
+              <div class="flex items-center gap-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path
+                    fill="#06b6d4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                  />
+                </svg>
+                <h2 class="text-xl">Email</h2>
+              </div>
+              <a href="mailto:alanzagi2007@gmail.com" class="text-md">alanzagi2007@gmail.com</a>
+            </div>
+
+            <div class="px-4 pb-6">
+              <div class="flex items-center gap-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path
+                    fill="#06b6d4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                  />
+                </svg>
+                <h2 class="text-xl">Email</h2>
+              </div>
+              <a href="mailto:alanzagi2007@gmail.com" class="text-md">alanzagi2007@gmail.com</a>
+            </div>
+
+            <div class="px-4 pb-12">
+              <div class="flex items-center gap-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path
+                    fill="#06b6d4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                  />
+                </svg>
+                <h2 class="text-xl">Email</h2>
+              </div>
+              <a href="mailto:alanzagi2007@gmail.com" class="text-md">alanzagi2007@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <h1 class="text-3xl font-playfair px-4 py-10">Kirimkan Pesan Kepada Kami</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section I  -->
+
+    <!-- Internal Javascript -->
+    <script src="js/script.js"></script>
+    <!-- Flowbite Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
