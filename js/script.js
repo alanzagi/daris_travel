@@ -51,7 +51,7 @@ document.querySelectorAll(".hubungi").forEach(function (button) {
 });
 // End Fungsi untuk tombol hubungi
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbxS0tNgVZ7qU1-STyikAmDrstz-mHtXRqKqZIPteTeMVBelTATd4PPd8q4IBkuZ3Si9/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbwxX29-sCSiX0v-OPn5PoHz84W0ktSVm39cVpeUnXciS-z3hoiBn32FpexDPFGy6CdN/exec";
 const form = document.forms["database"];
 const button = document.getElementById("submit");
 const successMessage = document.getElementById("success-message");
@@ -100,3 +100,24 @@ function handleSubmit() {
       button.classList.add("bg-cyan-500", "hover:bg-cyan-600");
     });
 }
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Mencegah form dari reload halaman default
+
+  // Mengambil data dari form
+  const form = e.target;
+  const formData = new FormData(form);
+  const nama = formData.get("nama");
+  const pesan = formData.get("pesan");
+
+  // Membuat URL WhatsApp dengan format yang sesuai
+  const whatsappURL = `https://wa.me/?text=${encodeURIComponent("Halo, kak.")}%0A%0ANama Saya:%20${encodeURIComponent(nama)}%0APesan:%20${encodeURIComponent(pesan)}`;
+
+  // Redirect ke WhatsApp
+  window.open(whatsappURL, "_blank");
+
+  // Jika perlu, tampilkan pesan sukses
+  document.getElementById("success-message").classList.remove("hidden");
+  setTimeout(() => {
+    document.getElementById("success-message").classList.add("hidden");
+  }, 3000); // Sembunyikan setelah 3 detik
+});
