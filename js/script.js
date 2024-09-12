@@ -110,7 +110,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
   const pesan = formData.get("pesan");
 
   // Membuat URL WhatsApp dengan format yang sesuai
-  const whatsappURL = `https://wa.me/?text=${encodeURIComponent("Halo, kak.")}%0A%0ANama Saya:%20${encodeURIComponent(nama)}%0APesan:%20${encodeURIComponent(pesan)}`;
+  const whatsappURL = `https://wa.me/6281521550913?text=${encodeURIComponent("Halo, kak.")}%0A%0ANama Saya:%20${encodeURIComponent(nama)}%0APesan:%20${encodeURIComponent(pesan)}`;
 
   // Redirect ke WhatsApp
   window.open(whatsappURL, "_blank");
