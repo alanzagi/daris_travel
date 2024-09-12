@@ -46,7 +46,7 @@ document.querySelectorAll(".hubungi").forEach(function (button) {
   // Tambahkan event listener untuk klik pada setiap tombol dengan kelas "hubungi"
   button.addEventListener("click", function () {
     // Arahkan ke WhatsApp dengan pesan yang sudah diisi
-    window.location.href = "https://wa.me/6281521550913?text=halo";
+    window.location.href = "kontak.html";
   });
 });
 // End Fungsi untuk tombol hubungi
