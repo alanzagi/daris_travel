@@ -100,6 +100,7 @@ function handleSubmit() {
       button.classList.add("bg-cyan-500", "hover:bg-cyan-600");
     });
 }
+
 document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault(); // Mencegah form dari reload halaman default
 
